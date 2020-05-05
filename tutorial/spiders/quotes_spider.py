@@ -42,5 +42,8 @@ class QuotesSpider(scrapy.Spider):
 
 # scrapy crawl quotes -o quotes.jl
 
-#The JSON Lines format is useful because it’s stream-like, you can easily append new records 
+# The JSON Lines format is useful because it’s stream-like, you can easily append new records 
 # to it. It doesn’t have the same problem of JSON when you run twice.
+
+#However, if you want to perform more complex things with the scraped items, you can write 
+# an Item Pipeline (pre-created, empty for now).
